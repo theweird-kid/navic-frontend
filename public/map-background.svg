@@ -1,0 +1,47 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a365d" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="land" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#020617"/>
+  
+  <!-- Grid -->
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <!-- Landmasses -->
+  <path d="M200,100 C300,80 400,150 500,100 C600,50 700,120 800,150 C900,180 1000,120 1100,150 L1100,400 C1000,380 900,450 800,400 C700,350 600,420 500,450 C400,480 300,420 200,450 L200,100 Z" fill="url(#land)" opacity="0.7"/>
+  <path d="M150,500 C250,480 350,550 450,500 C550,450 650,520 750,550 C850,580 950,520 1050,550 L1050,700 C950,680 850,750 750,700 C650,650 550,720 450,750 C350,780 250,720 150,750 L150,500 Z" fill="url(#land)" opacity="0.7"/>
+  
+  <!-- Water bodies -->
+  <path d="M300,200 C350,180 400,220 450,200 C500,180 550,220 600,200 L600,300 C550,320 500,280 450,300 C400,320 350,280 300,300 L300,200 Z" fill="url(#water)" opacity="0.5"/>
+  <path d="M700,300 C750,280 800,320 850,300 C900,280 950,320 1000,300 L1000,400 C950,420 900,380 850,400 C800,420 750,380 700,400 L700,300 Z" fill="url(#water)" opacity="0.5"/>
+  
+  <!-- Routes/Paths -->
+  <path d="M250,150 L350,180 L450,150 L550,200 L650,180 L750,220 L850,180 L950,200" stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M200,550 L300,580 L400,550 L500,600 L600,580 L700,620 L800,580 L900,600" stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Connection lines -->
+  <path d="M350,180 L400,550" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="5,5"/>
+  <path d="M550,200 L500,600" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="5,5"/>
+  <path d="M750,220 L700,620" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="5,5"/>
+  
+  <!-- Points of interest -->
+  <circle cx="350" cy="180" r="5" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="550" cy="200" r="5" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="750" cy="220" r="5" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="400" cy="550" r="5" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="500" cy="600" r="5" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="700" cy="620" r="5" fill="#3b82f6" opacity="0.8"/>
+</svg>
+
